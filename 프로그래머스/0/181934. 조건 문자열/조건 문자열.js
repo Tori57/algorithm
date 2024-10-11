@@ -1,4 +1,6 @@
 function solution(ineq, eq, n, m) {
-    
- return(n>m && ineq===">" && eq==="!") || (n>=m && ineq===">" && eq==="=") || (n<m && ineq==="<" && eq==="!") ||(n<=m && ineq==="<" && eq==="=") ? 1: 0
+    if (n===m && eq==="=") return 1
+    if (n<m && ineq=== "<") return 1
+    if (n>m && ineq===">") return 1
+    else return 0
 }
